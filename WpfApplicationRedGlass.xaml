@@ -1,0 +1,40 @@
+<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="WpfApplicationRedGlass" Height="110" Width="310">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="http://softgarden137.github.io/tile/RedButton.xaml" />
+                <ResourceDictionary Source="http://softgarden137.github.io/tile/RedProgressBar.xaml" />
+                <!--
+                <ResourceDictionary Source="http://localhost:2060/MyBlogNew/myBlog/xaml/RedButton.xaml" />
+                <ResourceDictionary Source="http://localhost:2060/MyBlogNew/myBlog/xaml/RedProgressBar.xaml" />
+                <ResourceDictionary Source="http://softgarden.lovepop.jp/myBlog/xaml/RedButton.xaml" />
+                <ResourceDictionary Source="http://softgarden.lovepop.jp/myBlog/xaml/RedProgressBar.xaml" />
+                <ResourceDictionary Source="RedButton.xaml" />
+                <ResourceDictionary Source="RedProgressBar.xaml" />
+                <ResourceDictionary Source="/WpfApplicationRedGlass;component/RedButton.xaml" />
+                <ResourceDictionary Source="/WpfApplicationRedGlass;component/RedProgressBar.xaml" />
+                -->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Canvas>
+        <ProgressBar Name="progressBar"
+            Canvas.Left="0" Canvas.Top="0"
+            Minimum="0" Maximum="10000"
+            Margin="5" Width="200" Height="25"/>
+        <TextBlock Name="statusTextBlock" Width="100"
+            Canvas.Left="215" Canvas.Top="10"/>
+        <Button Name="startButton"  
+            Canvas.Left="110" Canvas.Top="35"
+            Margin="5" Width="80" Height="25" Content="Start"
+            Style="{StaticResource RedButton}"/>
+        <Button Name="stopButton"
+            Canvas.Left="200" Canvas.Top="35"
+            Margin="5" Width="80" Height="25" Content="Stop" IsEnabled="False"
+            Style="{StaticResource RedButton}"/>
+    </Canvas>
+</Window> 
