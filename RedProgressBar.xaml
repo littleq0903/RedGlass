@@ -1,0 +1,31 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="CommonResource.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <LinearGradientBrush x:Key="ProgressBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#888888" />
+        <GradientStop Offset="1" Color="#AAAAAA" />
+    </LinearGradientBrush>
+    <Style TargetType="{x:Type ProgressBar}">
+        <Setter Property="MinHeight" Value="15" />
+        <Setter Property="MinWidth" Value="100" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ProgressBar}">
+                    <Grid>
+                        <Border Name="PART_Track" CornerRadius="1" Background="{StaticResource ProgressBackground}" BorderThickness="1" BorderBrush="{StaticResource ControlBorder}"></Border>
+                        <Grid Name="PART_Indicator" HorizontalAlignment="Left" >
+                            <Rectangle x:Name="prgBackground" Margin="0" RadiusX="1" RadiusY="1" Fill="{StaticResource ControlBackground}" >
+                            </Rectangle>
+                            <Rectangle x:Name="Highlight1" Margin="1" RadiusX="1" RadiusY="1" Opacity="1" Fill="{StaticResource ControlWhiteTop}">
+                            </Rectangle>
+                            <Rectangle x:Name="Highlight2" Margin="0" RadiusX="1" RadiusY="1" Opacity="1" Fill="{StaticResource ControlWhiteBottom}">
+                            </Rectangle>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
