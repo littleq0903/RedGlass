@@ -2,7 +2,7 @@ import wpf
 
 from System.Windows import Application, Window
 from System.Windows import MessageBox
-from System.ComponentModel import BackgroundWorker, DoWorkEventHandler, RunWorkerCompletedEventHandler
+from System.ComponentModel import BackgroundWorker
 
 
 class MyWindow(Window):
@@ -24,8 +24,7 @@ class MyWindow(Window):
         self.bw.ProgressChanged += self.bw_ProgressChanged
         #// バックグラウンドでの処理が終了後の処理
         self.bw.RunWorkerCompleted += self.bw_RunWorkerCompleted
-        #self.bw.RunWorkerCompleted += RunWorkerCompletedEventHandler(self.bw_RunWorkerCompleted)
-
+    
     #// 時間のかかる処理
     def bw_DoWork(self, sender, e):
         import System
