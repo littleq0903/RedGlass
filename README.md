@@ -1,5 +1,4 @@
 # RedGlass
-===================
 
 IronPython 2.7 WPF Application
 
