@@ -1,0 +1,44 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- テキスト -->
+    <SolidColorBrush x:Key="TextBrush" Color="White" />
+    
+    <!-- バックグラウンドの定義 -->
+    <!-- 通常のバックグラウンド -->
+    <LinearGradientBrush x:Key="ControlBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#FFFF0000" />
+        <GradientStop Offset="0.5" Color="#FFFF0000" />
+        <GradientStop Offset="1" Color="#AADD4433" />
+    </LinearGradientBrush>
+    <!-- ボーダーカラー -->
+    <LinearGradientBrush x:Key="ControlBorder" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#AAFF0000" />
+        <GradientStop Offset="0.8" Color="#AAFF0000" />
+    </LinearGradientBrush>
+    <!-- マウスオーバー時のバックグラウンド -->
+    <LinearGradientBrush x:Key="ControlBackgroundMouserOver" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#FFFF0000" />
+        <GradientStop Offset="1" Color="#DDFF44FF" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ControlBackgroundMousePressed" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#CCFFFFFF" />
+        <GradientStop Offset="0.1" Color="#CCFFFFFF" />
+        <GradientStop Offset="0.4" Color="#88FFFFFF" />
+        <GradientStop Offset="0.4" Color="#00FFFFFF" />
+    </LinearGradientBrush>
+    <!-- 光沢 -->
+    <LinearGradientBrush x:Key="ControlWhiteTop" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#CCFFFFFF" />
+        <GradientStop Offset="0.1" Color="#CCFFFFFF" />
+        <GradientStop Offset="0.4" Color="#88FFFFFF" />
+        <GradientStop Offset="0.4" Color="#00FFFFFF" />
+    </LinearGradientBrush>
+    <RadialGradientBrush x:Key="ControlWhiteBottom"
+          GradientOrigin="0.5,1.0"
+          Center="0.5,1.0" RadiusX="0.7" RadiusY="0.1">
+        <RadialGradientBrush.GradientStops>
+            <GradientStop Color="#AAFFFFFF" Offset="0" />
+            <GradientStop Color="#00FFFFFF" Offset="1" />
+        </RadialGradientBrush.GradientStops>
+    </RadialGradientBrush>
+</ResourceDictionary>
