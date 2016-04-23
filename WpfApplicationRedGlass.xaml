@@ -5,8 +5,8 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="http://softgarden137.github.io/tile/RedButton.xaml" />
-                <ResourceDictionary Source="http://softgarden137.github.io/tile/RedProgressBar.xaml" />
+                <ResourceDictionary Source="http://softgarden137.github.io/RedGlass/RedButton.xaml" />
+                <ResourceDictionary Source="http://softgarden137.github.io/RedGlass/RedProgressBar.xaml" />
                 <!--
                 <ResourceDictionary Source="http://localhost:2060/MyBlogNew/myBlog/xaml/RedButton.xaml" />
                 <ResourceDictionary Source="http://localhost:2060/MyBlogNew/myBlog/xaml/RedProgressBar.xaml" />
