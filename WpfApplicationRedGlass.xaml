@@ -8,6 +8,8 @@
                 <ResourceDictionary Source="http://softgarden137.github.io/RedGlass/RedButton.xaml" />
                 <ResourceDictionary Source="http://softgarden137.github.io/RedGlass/RedProgressBar.xaml" />
                 <!--
+                <ResourceDictionary Source="C:\Users\Norimi\Documents\Visual Studio 2013\Projects\WpfApplicationRedGlass\WpfApplicationRedGlass\RedButton.xaml" />
+                <ResourceDictionary Source="C:\Users\Norimi\Documents\Visual Studio 2013\Projects\WpfApplicationRedGlass\WpfApplicationRedGlass\RedProgressBar.xaml" />
                 <ResourceDictionary Source="http://localhost:2060/MyBlogNew/myBlog/xaml/RedButton.xaml" />
                 <ResourceDictionary Source="http://localhost:2060/MyBlogNew/myBlog/xaml/RedProgressBar.xaml" />
                 <ResourceDictionary Source="http://softgarden.lovepop.jp/myBlog/xaml/RedButton.xaml" />
